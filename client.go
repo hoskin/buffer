@@ -24,16 +24,13 @@ type Update struct {
 }
 
 type Profile struct {
-	Avatar            string
 	CreatedAt         int64
 	Default           bool
-	FormattedUsername string
 	Id                string
 	Schedules         []map[string][]string
 	Service           string
 	ServiceId         string
-	ServiceUsername   string `json:"service_username"`
-	Statistics        map[string]interface{}
+	ServiceUsername   string `json:"service_username,omitempty"`
 	TeamMembers       []string
 	Timezone          string
 	UserId            string
