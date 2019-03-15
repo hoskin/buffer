@@ -29,7 +29,7 @@ type Profile struct {
 	Id                string
 	Schedules         []map[string][]string
 	Service           string
-	ServiceId         string `json:service_id`
+	ServiceId         string `json:"service_id"`
 	ServiceUsername   string `json:"service_username,omitempty"`
 	TeamMembers       []string
 	Timezone          string
